@@ -1,72 +1,84 @@
-body {
-    background-color: white;
-    padding: 4vw;
-}
+/* class definitions------------------------*/
 
+/* defines the card elements*/
 .card {
-    margin-bottom: 16px;
-    background-color: white;
-    border-radius: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    max-width: 400px;
-    min-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	border-radius: 8px;
+	/* padding*/
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	/* sizing*/
+	max-width: 400px;
+	min-width: 300px;
+	/* centers the card in the body*/
+	margin-left: auto;
+	margin-right: auto;
+	/* defines space between cards*/
+	margin-bottom: 16px;
+	/* drop shadow*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
 
+}
+
+/* -----------------------------------------*/
+
+body {
+	background-color: white;
+	padding: 4vw;
 }
 
 img {
-    border-radius: 100px;
-    width: 200px;
+	border-radius: 100px;
+	width: 200px;
 }
 
 h1 {
-    text-align: center;
-    color: #0b0016;
-    font-family: sans-serif;
-    font-size: 24px;
-    margin-bottom: 0;
+	text-align: center;
+	color: #0b0016;
+	font-family: sans-serif;
+	font-size: 24px;
+	margin-bottom: 0;
 }
 
 h2 {
-    text-align: center;
-    color: cornflowerblue;
-    font-family: sans-serif;
-    font-size: 16px;
-    margin-bottom: 0;
+	text-align: center;
+	color: black;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+span {
+	color: cornflowerblue;
 }
 
 a {
-    text-decoration: none;
-    color:black;
+	text-decoration: none;
+	color: cornflowerblue;
 }
 
-a:hover {
-    color:#EB376D;
-}
+a:hover {}
 
 ul {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 li {
-    font-family: sans-serif;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 8px;
+	font-family: monospace;
+	font-size: 16px;
+	padding: 8px;
+	border-radius: 8px;
 }
 
 li:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-decoration: underline;
 }
