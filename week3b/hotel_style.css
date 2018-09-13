@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+
+
+}
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p, li {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+.subhead {
+    font-size: 80%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1, h2 {
+    font-family: serif;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: .2em;
+
+}
+
+#infobox img{
+    max-width: 100%;
+}
