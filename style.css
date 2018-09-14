@@ -21,6 +21,7 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* centers name and IGME 230 */
 .profile {
 	margin-left: auto;
 	margin-right: auto;
@@ -29,17 +30,19 @@
 }
 
 /* -----------------------------------------*/
-
+/* Sets background color and page padding */
 body {
 	background-color: white;
 	padding: 4vw;
 }
 
+/* sets the size and rounds the image */
 img {
 	border-radius: 100px;
 	width: 200px;
 }
 
+/* styles my name */
 h1 {
 	text-align: center;
 	color: #0b0016;
@@ -47,30 +50,29 @@ h1 {
 	font-size: 24px;
 	margin-bottom: 0;
 }
-
+/* styles section headings*/
 h2 {
 	text-align: center;
 	color: black;
 	font-family: sans-serif;
 	font-size: 16px;
 }
-
+/* makes elements blue */
 span {
 	color: cornflowerblue;
 }
-
+/* styles links */
 a {
 	text-decoration: none;
 	color: cornflowerblue;
 }
-
-a:hover {}
-
+/* removes default style from lists */
 ul {
 	list-style: none;
 	padding: 0;
 }
 
+/* styles list items */
 li {
 	font-family: monospace;
 	font-size: 16px;
