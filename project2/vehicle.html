@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lefurge Design - Vehicle Registration</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#5182ff">
+</head>
+
+<body>
+	<nav>
+		<!-- Site Name-->
+		<h3 id="siteName">Lefurge Design</h3>
+		<!-- Site Links-->
+		<div id="navLinks">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<!-- Dropdown Menus-->
+			<div class="dropdown">
+				<button class="dropbtn">Projects
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<!-- Links in the Dropdown-->
+				<div class="dropdown-content">
+					<a href="news_deck.html">News Deck</a>
+					<a href="mobile_banking.html">Mobile Banking</a>
+					<a href="vehicle.html">Vehicle Registration</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="parallax_vehicle"></div>
+	</header>
+	<div id="content">
+		<section id="project">
+			<h1>Vehicle Registration</h1>
+			<h3>UX Redesign</h3>
+			<p>In order to modernize and streamline the process of registering a vehicle with the state of New York, a full case study was preformed to evaluate how the process is currently handled using paper documents and how the dynamic nature of the web can enhance this process.</p>
+		</section>
+		<aside id="info">
+			<h3>Role</h3>
+			<p>Visual Design, Interaction Design, Research</p>
+			<h3>Duration</h3>
+			<p>2 Weeks, April - May 2018</p>
+			<h3>Tools</h3>
+			<p>Adobe XD</p>
+			<button onclick="window.location.href='https://paper.dropbox.com/doc/Vehicle-Registration-A-Case-Study-kgdvYX32XfXbG94eKS0gc?_tk=share_copylink'" class="deckButt">View Deck</button>
+		</aside>
+		<article>
+			<img src="vehicle/images/vehicle_mockup.jpg">
+			<h2>Form Configuration</h2>
+			<p>By first learning who the user is, the form can be configured to only ask the user for the information that is necessary to complete their task. </p>
+			<img src="vehicle/images/Configure_Form_Final.png">
+			<h2>Form</h2>
+			<p>The core form was redesigned to present information in a clear relationship based hierarchy. Subtle features were added to enhance the user experience and reduce error, such as helper text, error icons, and an annotated progress bar.</p>
+			<img src="vehicle/images/Main_Form_Final.png">
+
+			<h2>Warning State</h2>
+			<p>To key features were introduced to mitigate accidental progress loss. The first is a button in the top right that allows the user to save their progress. The second is a warning screen that is presented when the user attempts to close or leave the page.</p>
+			<img src="vehicle/images/Leaving_Page_Prompt_Final.png">
+			<h2>User Certification</h2>
+			<p>Signing a form is an unintuitive action on a desktop site and therefore an alternative method of user certification was required. The user has the option to either enter their social security number, if they are uncomfortable doing so or are not a US citizen they may alternatively upload a photo of a valid drivers license.</p>
+			<img src="vehicle/images/Certification_Final.png">
+
+
+		</article>
+	</div>
+</body>
+
+</html>

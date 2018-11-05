@@ -1,0 +1,14 @@
+{
+    "name": "Lefurge Design",
+    "short_name": "Lefurge Design",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#5182ff",
+    "background_color": "#5182ff",
+    "display": "standalone"
+}
