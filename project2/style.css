@@ -1,6 +1,7 @@
+@import url('https://rsms.me/inter/inter-ui.css');
 html {
 	font-size: 18px;
-	font-family: Roboto, sans-serif;
+	font-family: 'Inter UI', sans-serif;
 }
 
 /*nav--------------------------------*/
