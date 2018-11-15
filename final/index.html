@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://use.typekit.net/xcp6ekd.css">
+	<title>Grid Practice</title>
+</head>
+
+<body>
+	<nav>
+		<div class="nav_elements">
+			<h1 class="site_name">Lefurge Design</h1>
+			<div class="links">
+				<a href="">About</a>
+				<a href="">Product Design</a>
+				<a href="">Motion Graphics</a>
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+		<div class="grid">
+			<div>
+
+			</div>
+			<section>
+				<h1>News Deck</h1>
+				<h3>Product Concept</h3>
+				<p>People are constantly overwhelmed by the amount of information they are asked to consume on a regular basis. We are inundated with heaps of news, only a small percentage of which we actually care about. So I designed a mobile first news aggregation app that enables users to better manage and compartmentalize the news they consume.</p>
+			</section>
+			<aside>
+				<h3>Role</h3>
+				<p>Visual Design, Interaction Design</p>
+				<h3>Duration</h3>
+				<p>4 Weeks, April - May 2018</p>
+				<h3>Tools</h3>
+				<p>Invision Studio</p>
+				<button onclick="window.location.href='https://paper.dropbox.com/doc/NewsDeck-News-Aggregation--ARD5biCMdRHmiYX9fU76vpcJAg-BNrcUzAmlBXhfyAavQUSZ'" class="deckButt">View Deck</button>
+			</aside>
+			<article>
+				<h2>Making News Actionable</h2>
+				<p>News is typically presented today as a never ending feed. People endlessly scroll to the bottom to see if they missed something interesting even if it isn't relevant anymore. News Deck avoids this by presenting news as a finite deck of cards which are intuitive to sort and interact with.</p>
+
+			</article>
+			<article class="gallery">
+				<div class="cell">
+					<img src="/project2/news_deck/images/Bookmark_Crop.jpg">
+				</div>
+				<div class="cell">
+					<img src="/project2/news_deck/images/insights_crop.jpg">
+				</div>
+			</article>
+			<article>
+				<h2>Getting Insights</h2>
+				<p>In addition to making news more actionable, news deck will actively make suggestions for how the user can reduce the amount of news in their feed. These "Insights" are based on user behavior and can either be acted on or dismissed.</p>
+			</article>
+		</div>
+	</div>
+</body>
+<style>
+	@import url('https://rsms.me/inter/inter-ui.css');
+
+	html,
+	body {
+		font-family: 'Inter UI', sans-serif;
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+		background-color: #fafafa;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		transition: all 0.2s ease-out .1s;
+		position: fixed;
+	}
+
+	.nav_elements{
+		width: 1000px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.content {
+		display: flex;
+		justify-content: center;
+		padding: 8em 1em;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		max-width: 1000px;
+	}
+
+	article {
+		grid-column: 1/ span 2;
+	}
+
+	.gallery {
+		padding: 2em;
+		grid-column: 1/ span 2;
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.gallery .cell {
+		max-width: 300px;
+		margin: 0 1em;
+	}
+
+	.gallery img {
+		width: 100%;
+	}
+
+	button {
+		background: #5182FF;
+		border: none;
+		border-radius: 8px;
+		width: 100%;
+		height: 3em;
+		text-align: center;
+		color: #fafafa;
+	}
+
+	section {
+		margin-right: 16px;
+	}
+
+	.site_name {
+		font-family: bello-pro, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 2em;
+
+		margin: 0;
+
+		transition: all 0.2 ease-out 0;
+	}
+
+	h1 {
+		font-size: 2em;
+		font-weight: bold;
+
+		margin-top: 0;
+		margin-bottom: .25em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: normal;
+		color: #5182FF;
+
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+
+	aside h3 {
+		margin-top: 0;
+		margin-bottom: .25em;
+	}
+
+	aside p {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+
+	p {
+		color: #333333;
+		line-height: 2em;
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+
+	a {
+		color: black;
+		padding: 1em;
+		text-decoration: none;
+		transition: all 0.2 ease-out 0;
+	}
+
+	a:hover {
+		background-color: dodgerblue;
+	}
+
+	@media (max-width:640px) {
+		section {
+			grid-column: 1/ span 2;
+			margin: 0;
+		}
+
+		aside {
+			grid-column: 1/ span 2;
+		}
+	}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(window).scroll(function() {
+		var $height = $(window).scrollTop();
+		if ($height > 50) {
+			$("nav").css({
+				"background-color": "black",
+				"opacity": ".8"
+			});
+			$("a").css({
+				"color": "#fafafa",
+				"opacity": "1"
+			});
+			$(".site_name").css({
+				"color": "#fafafa",
+				"opacity": "1"
+			});
+		} else {
+			$("nav").css({
+				"background-color": "#fafafa",
+				"opacity": "1"
+			});
+			$("a").css({
+				"color": "#333333"
+			});
+			$(".site_name").css({
+				"color": "#333333"
+			});
+		}
+	});
+</script>
+
+</html>
