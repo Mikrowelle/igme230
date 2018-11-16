@@ -22,6 +22,7 @@
 	<header>
 		<div>
 			<h1>News Deck</h1>
+			<a href="#project_intro"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
 		</div>
 		<img class="slide" src="images/daniil-silantev-1147022-unsplash_crop_high_res.jpg" alt="Warm Forest Photo">
 		<img class="slide" src="images/john-westrock-1075374-unsplash_crop_high_res.jpg" alt="Foggy Forest Photo">
@@ -30,7 +31,7 @@
 	<div class="content">
 		<div class="grid">
 
-			<section>
+			<section id="project_intro">
 				<h1>News Deck</h1>
 				<h3>Product Concept</h3>
 				<p>People are constantly overwhelmed by the amount of information they are asked to consume on a regular basis. We are inundated with heaps of news, only a small percentage of which we actually care about. So I designed a mobile first news aggregation app that enables users to better manage and compartmentalize the news they consume.</p>
@@ -125,8 +126,11 @@
 		right: 0;
 
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		transition: opacity 0.2s ease-out .1s;
 
 	}
 
@@ -182,6 +186,11 @@
 		transition: all 0.2 ease-out 0;
 	}
 
+	header .icon {
+		opacity: .8;
+		width: 4vw;
+	}
+
 	header h1 {
 		font-size: 5vw;
 
@@ -190,9 +199,6 @@
 		padding: .25em;
 		opacity: .8;
 		border-radius: 8px;
-
-		transition: all 0.2s ease-out .1s;
-
 	}
 
 	h1 {
@@ -255,6 +261,9 @@
 		aside {
 			grid-column: 1/ span 2;
 		}
+		header div{
+			display: none;
+		}
 	}
 </style>
 
@@ -293,7 +302,7 @@
 				"color": "#fafafa",
 				"opacity": "1"
 			});
-			$("header h1").css({
+			$("header div").css({
 				"opacity": "0"
 			});
 		} else {
@@ -310,7 +319,17 @@
 			$("header h1").css({
 				"opacity": ".8"
 			});
+			$("header div").css({
+				"opacity": ".8"
+			});
 		}
+	});
+
+	$('header a').click(function() {
+		let target = $(this.hash);
+		$('html, body').animate({
+			scrollTop: target.offset().top - 200
+		}, 600);
 	});
 </script>
 
