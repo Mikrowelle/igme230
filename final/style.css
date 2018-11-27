@@ -2,255 +2,246 @@
 
 html,
 body {
-	font-family: 'Inter UI', sans-serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-	background-color: #fafafa;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
 }
 
 nav {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	transition: all 0.2s ease-out .1s;
-	position: fixed;
-	z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all 0.2s ease-out .1s;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav_elements {
-	width: 1000px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
-
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .content {
-	display: flex;
-	justify-content: center;
-	padding: 4em 1.5em;
+  display: flex;
+  justify-content: center;
+  padding: 4em 1.5em;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	max-width: 1000px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 1000px;
 }
 
 article {
-	grid-column: 1/ span 2;
+  grid-column: 1/ span 2;
 }
 
 header {
-	max-width: 100%;
-	max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 header div {
-	margin: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	transition: opacity 0.2s ease-out .1s;
-
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-out .1s;
 }
 
 .gallery {
-	padding: 2em;
-	grid-column: 1/ span 2;
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  padding: 2em;
+  grid-column: 1/ span 2;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery .cell {
-	max-width: 300px;
-	margin: 0 1em;
+  max-width: 300px;
+  margin: 0 1em;
 }
 
 .gallery img {
-	width: 100%;
+  width: 100%;
 }
 
 .slide {
-	display: none;
-	max-width: 100%;
+  display: none;
+  max-width: 100%;
 }
 
 button {
-	background: #5182FF;
-	border: none;
-	border-radius: 8px;
-	width: 100%;
-	height: 3em;
-	text-align: center;
-	color: #fafafa;
+  background: #5182FF;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  color: #fafafa;
 }
 
 button:hover {
-	transform: rotate3d(180deg);
+  transform: rotate3d(180deg);
 }
 
 section {
-	margin-right: 16px;
+  margin-right: 16px;
 }
 
 .site_name {
-	font-family: bello-pro, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2em;
-
-	margin: 0 0 0 .5em;
-
-	transition: all 0.2 ease-out 0;
+  font-family: bello-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  margin: 0 0 0 .5em;
+  transition: all 0.2 ease-out 0;
 }
 
 header .icon {
-	opacity: .8;
-	width: 4vw;
+  opacity: .8;
+  width: 4vw;
 }
 
 header a:hover {
-	background: none;
+  background: none;
 }
 
 header h1 {
-	font-size: 5vw;
-
-	color: white;
-	background-color: black;
-	padding: .25em;
-	opacity: .8;
-	border-radius: 8px;
+  font-size: 5vw;
+  color: white;
+  background-color: black;
+  padding: .25em;
+  opacity: .8;
+  border-radius: 8px;
 }
 
 h1 {
-	font-size: 2em;
-	font-weight: bold;
-
-	margin-top: 0;
-	margin-bottom: .25em;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: .25em;
 }
 
 h2 {
-	font-size: 1.5em;
-	font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 h3 {
-	font-size: 1em;
-	font-weight: normal;
-	color: #5182FF;
-
-	margin-top: 0;
-	margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: normal;
+  color: #5182FF;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 aside h3 {
-	margin-top: 0;
-	margin-bottom: .25em;
+  margin-top: 0;
+  margin-bottom: .25em;
 }
 
 aside p {
-	margin-top: 0;
-	margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 p {
-	color: #333333;
-	line-height: 2em;
-	margin-top: 0;
-	margin-bottom: 2em;
+  color: #333333;
+  line-height: 2em;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 a {
-	color: black;
-	padding: 1em;
-	text-decoration: none;
-	transition: all 0.2 ease-out 0;
+  color: black;
+  padding: 1em;
+  text-decoration: none;
+  transition: all 0.2 ease-out 0;
 }
 
 a:hover {
-	background-color: dodgerblue;
-	color: #fafafa;
+  background-color: dodgerblue;
+  color: #fafafa;
 }
 
 /*side nav*/
 #navpanel {
-	display: grid;
-	grid-template-columns: 250px 1.5em;
-	min-height: 200px;
-	max-height: 90vh;
-	margin-bottom: 2em;
-	background-color: black;
-	position: fixed;
-	top: 40vh;
-	left: -250px;
-	z-index: 2;
-	opacity: .5;
-	transition: opacity 0.2 ease-out 0;
+  display: grid;
+  grid-template-columns: 250px 1.5em;
+  min-height: 200px;
+  max-height: 90vh;
+  margin-bottom: 2em;
+  background-color: black;
+  position: fixed;
+  top: 40vh;
+  left: -250px;
+  z-index: 2;
+  opacity: .5;
+  transition: opacity 0.2 ease-out 0;
 }
 
 #navtoggle {
-	grid-column-start: 2;
-	font-size: 3em;
-	font-weight: bold;
-	background-color: white;
+  grid-column-start: 2;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: white;
 }
 
 #navmenu {
-	grid-column-start: 1;
-	grid-row-start: 1;
-	align-items: top;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  align-items: top;
 }
 
 #navmenu li {
-	color: cornflowerblue;
-	margin-top: .5em;
-	list-style-type: none;
-
+  color: cornflowerblue;
+  margin-top: .5em;
+  list-style-type: none;
 }
 
 #close {
-	display: none;
+  display: none;
 }
 
 #open {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .submenu-panel {
-	display: none;
+  display: none;
 }
 
 #content {
-	padding: 0 .5em 0 2em;
+  padding: 0 .5em 0 2em;
 }
 
 @media (max-width:640px) {
-	section {
-		grid-column: 1/ span 2;
-		margin: 0;
-	}
+  section {
+    grid-column: 1/ span 2;
+    margin: 0;
+  }
 
-	aside {
-		grid-column: 1/ span 2;
-	}
+  aside {
+    grid-column: 1/ span 2;
+  }
 
-	header div {
-		display: none;
-	}
+  header div {
+    display: none;
+  }
 }
