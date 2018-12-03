@@ -87,22 +87,34 @@ header div {
     max-width: 100%;
 }
 
+/*Button Styles*/
 button {
     background: #5182FF;
     border: none;
     border-radius: 8px;
+    font-size: 1em;
     width: 100%;
-    height: 3em;
+    padding: 12px;
     text-align: center;
     color: #fafafa;
+    transition: all .1s ease-out .1s;
 }
 
 button:hover {
-    transform: rotate3d(180deg);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
+    box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
 }
 
-section {
-    margin-right: 16px;
+button:active {
+    background: #4c7aed;
+    -webkit-box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#project_intro p {
+    margin-right: 32px;
 }
 
 .site_name {
@@ -235,7 +247,10 @@ a:hover {
 @media (max-width:640px) {
     section {
         grid-column: 1/ span 2;
-        margin: 0;
+    }
+
+    #project_intro p {
+        margin-right: 0;
     }
 
     aside {
