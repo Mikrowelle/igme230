@@ -21,6 +21,9 @@
             </div>
         </div>
     </nav>
+    <div id="return_button">
+        <a href="#header_gallary"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
+    </div>
     <div id="navpanel">
         <div id="navtoggle"><span id="open">+</span><span id="close">-</span></div>
         <div id="navmenu">
@@ -41,7 +44,7 @@
             </ul>
         </div>
     </div>
-    <header>
+    <header id="header_gallary">
         <div>
             <h1>News Deck</h1>
             <a href="#project_intro"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
@@ -125,6 +128,10 @@
             $("header div").css({
                 "opacity": "0"
             });
+        } else if ($height > 100) {
+            $("#return_button").css({
+                "opacity":".8"
+            });
         } else {
             $("nav").css({
                 "opacity": "1",
@@ -142,6 +149,9 @@
             $("header div").css({
                 "opacity": ".8"
             });
+            $("#return_button").css({
+                "opacity":"0"
+            });
         }
     });
 
@@ -149,6 +159,12 @@
         let target = $(this.hash);
         $('html, body').animate({
             scrollTop: target.offset().top - 65
+        }, 600);
+    });
+    $('#return_button a').click(function() {
+        let target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
         }, 600);
     });
 
