@@ -279,4 +279,7 @@ nav a:hover {
     header div {
         display: none;
     }
+    .submenu-{
+        display: none;
+    }
 }
