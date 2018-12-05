@@ -45,6 +45,18 @@ article {
     grid-column: 1/ span 2;
 }
 
+.fullsize{
+	grid-column: 1/ span 2;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+
+video{
+	object-fit: contain;
+}
+
 header {
     display: grid;
     max-width: 100%;
