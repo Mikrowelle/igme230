@@ -10,3 +10,11 @@ $('input[type=radio][name=content]').change(function () {
 	verse = $(this).val();
 	$("article").load(verse);
 });
+
+let clicks = 0;
+$("#clickme").click(function () {
+	clicks++;
+	console.log(clicks);
+	$("#count").html(clicks);
+})
+
