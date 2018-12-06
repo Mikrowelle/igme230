@@ -1,0 +1,120 @@
+/*********************************
+General Formatting (Do Not Change)
+*********************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* sets base font size for rem sizing */
+	font-size: 16px;
+	font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header,
+footer {
+	background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+	padding: .5rem;
+}
+
+nav,
+aside {
+	background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+.menuitem {
+	background: white;
+	margin: 0;
+	border: 1px solid;
+	border-color: white;
+
+}
+
+.submenu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+
+}
+
+.submenu li {
+	padding-left: .25rem;
+	background: lightgray;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+@media (min-width: 601px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+
+	#wrapper {
+		width: 90vw;
+		max-width: 1200px;
+		min-height: 100vh;
+		display: grid;
+
+		grid-template-columns: 1fr 2fr 200px;
+
+		grid-template-rows: 4rem auto 3rem;
+
+	}
+
+	header,
+	footer {
+		grid-column: 1/ span 3;
+	}
+
+	nav {
+		grid-column: 3;
+	}
+
+	aside {
+		grid-column: 1;
+	}
+
+	article {
+		grid-column: 2;
+	}
+
+	nav,
+	aside,
+	article {
+		grid-row: 2;
+	}
+
+
+}
+
+@media (max-width: 600px) {
+	#wrapper {
+		width: 100vw;
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+	}
+
+}

@@ -1,0 +1,119 @@
+/*****************
+General Formatting
+******************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* sets base font size for rem sizing */
+	font-size: 16px;
+	font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+article,
+aside {
+	padding: .5rem;
+}
+
+#extracredit {
+	width: 75%;
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid darkblue;
+}
+
+
+/**************
+Your Formatting
+***************/
+body {
+	display: flex;
+	justify-content: center;
+}
+
+#yourgrid {
+	display: grid;
+
+}
+
+header,
+footer {
+	background: lightpink;
+}
+
+article {
+	background: lightcyan;
+}
+
+aside {
+	background: lightblue;
+}
+
+nav {
+	background: lavenderblush;
+}
+
+@media (max-width:600px) {
+
+	#yourgrid {
+		width: 100vw;
+		grid-template-columns: 100%;
+	}
+
+	header {
+		height: 75px;
+	}
+
+	nav,
+	footer {
+		height: 30px;
+	}
+
+	article {
+		height: auto;
+	}
+
+	aside {
+		height: auto;
+	}
+}
+
+@media (min-width:601px) {
+	#yourgrid {
+		width: 90vw;
+		max-width: 1000px;
+		min-height: 100vh;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 75px 30px auto 50px;
+	}
+
+	header, footer{
+		grid-column: 1 / span 2;
+		display: flex;
+		justify-content: center;
+	}
+	article{
+		grid-column: 1;
+		grid-row: 2/ span 2;
+		height:100%;
+	}
+	nav{
+		grid-column: 2;
+		grid-row: 2;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	aside{
+		grid-column:2;
+		grid-row:3;
+		height:100%;
+	}
+}
