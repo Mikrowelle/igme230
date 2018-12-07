@@ -9,7 +9,7 @@ body {
     background-color: #fafafa;
 }
 
-/*tesst*/
+
 nav {
     width: 100%;
     display: flex;
@@ -45,16 +45,16 @@ article {
     grid-column: 1/ span 2;
 }
 
-.fullsize{
-	grid-column: 1/ span 2;
-	width: 100%;
-	display: flex;
-	justify-content: center;
+.fullsize {
+    grid-column: 1/ span 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
-video{
-	object-fit: contain;
+video {
+    object-fit: contain;
 }
 
 header {
@@ -72,6 +72,13 @@ header div {
     justify-content: center;
     align-items: center;
     transition: opacity 0.2s ease-out .1s;
+}
+
+#header_video {
+    grid-area: header;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .gallery {
@@ -100,7 +107,7 @@ header div {
 }
 
 /*Return Button: Returns usere to the top of the page*/
-#return_button{
+#return_button {
     position: fixed;
     display: flex;
     bottom: 16px;
@@ -111,7 +118,7 @@ header div {
     transition: opacity 0.2s ease-out .1s;
 }
 
-#return_button a img{
+#return_button a img {
     max-width: 100%;
     max-height: 100%;
     transform: rotate(180deg);
@@ -291,7 +298,8 @@ nav a:hover {
     header div {
         display: none;
     }
-    .submenu-{
+
+    .submenu- {
         display: none;
     }
 }
