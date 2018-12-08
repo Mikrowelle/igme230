@@ -74,13 +74,6 @@ header div {
     transition: opacity 0.2s ease-out .1s;
 }
 
-#header_video {
-    grid-area: header;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-
 .gallery {
     padding: 2em;
     grid-column: 1/ span 2;
