@@ -378,6 +378,10 @@ hr {
 
 
 @media (max-width:640px) {
+    nav{
+        position:relative;
+    }
+
     section {
         grid-column: 1/ span 2;
     }
@@ -394,7 +398,7 @@ hr {
         display: none;
     }
 
-    .submenu- {
+    #navpanel {
         display: none;
     }
 
