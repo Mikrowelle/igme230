@@ -46,29 +46,26 @@
 	</div>
 	<header id="header_gallary">
 		<div>
-			<h1>News Deck</h1>
+			<h1>Hi I'm Andrew</h1>
 			<a href="#project_intro"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
 		</div>
-		<img class="slide" src="images/daniil-silantev-1147022-unsplash_crop_high_res.jpg" alt="Warm Forest Photo">
-		<img class="slide" src="images/john-westrock-1075374-unsplash_crop_high_res.jpg" alt="Foggy Forest Photo">
-		<img class="slide" src="images/marita-kavelashvili-1151412-unsplash_crop_high_res.jpg" alt="Foggy Forest Valley Photo">
+		<img class="slidestill" src="images/about_cover.jpg" alt="Me Skiing">
 	</header>
 	<div class="content">
 		<div class="grid">
-
 			<section id="project_intro">
-				<h1>News Deck</h1>
-				<h3>Product Concept</h3>
-				<p>People are constantly overwhelmed by the amount of information they are asked to consume on a regular basis. We are inundated with heaps of news, only a small percentage of which we actually care about. So I designed a mobile first news aggregation app that enables users to better manage and compartmentalize the news they consume.</p>
+				<h1>Andrew Lefurge</h1>
+				<h3>Product Designer</h3>
+				<p>A multidisciplinary designer with a background in product, motion, and 3D design building inclusive products and experiences that delight and engage people in new and interesting ways.</p>
 			</section>
 			<aside>
-				<h3>Role</h3>
-				<p>Visual Design, Interaction Design</p>
-				<h3>Duration</h3>
-				<p>April - May 2018</p>
-				<h3>Tools</h3>
-				<p>Invision Studio</p>
-				<button onclick="window.location.href='https://paper.dropbox.com/doc/NewsDeck-News-Aggregation--ARD5biCMdRHmiYX9fU76vpcJAg-BNrcUzAmlBXhfyAavQUSZ'" class="deckButt">View Deck</button>
+				<h3>Email</h3>
+				<p>andlefurge@gmail.com</p>
+				<h3>Phone</h3>
+				<p>(862) 268-3561</p>
+				<h3>Twitter</h3>
+				<p>@alefurge</p>
+				<button onclick="window.location.href='https://paper.dropbox.com/doc/NewsDeck-News-Aggregation--ARD5biCMdRHmiYX9fU76vpcJAg-BNrcUzAmlBXhfyAavQUSZ'" class="deckButt">Resume</button>
 			</aside>
 			<div id="projectgrid">
 				<figure class="slideshow">
@@ -166,23 +163,6 @@
 </body>
 
 <script>
-	//makes the carousal change
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("slide");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
-		myIndex++;
-		if (myIndex > x.length) {
-			myIndex = 1
-		}
-		x[myIndex - 1].style.display = "block";
-		setTimeout(carousel, 4000);
-	}
 
 	$(window).scroll(function() {
 		var $height = $(window).scrollTop();
