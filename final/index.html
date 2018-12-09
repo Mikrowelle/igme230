@@ -16,13 +16,22 @@
     <nav>
         <div class="nav_elements">
             <h1 class="site_name">Lefurge Design</h1>
-            <div class="topnav" id="myTopnav">
-                <a href="#Home" class="active">Home</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Bonus">Bonus</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <!-- Site Links-->
+            <div id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <!-- Dropdown Menus-->
+                <div class="dropdown">
+                    <button class="dropbtn">Projects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <!-- Links in the Dropdown-->
+                    <div class="dropdown-content">
+                        <a href="news_deck.html">News Deck</a>
+                        <a href="mobile_banking.html">Mobile Banking</a>
+                        <a href="vehicle.html">Vehicle Registration</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -78,7 +87,8 @@
                 <div class="hideshow">
                     <h1>Projects</h1>
                     <figure class="hideshowicon">
-                        <img src="icons/baseline-expand_more-24px.svg" alt="Hide/Show Icon">
+                        <i class="fa fa-caret-down" id="pArrowDown"></i>
+                        <i class="fa fa-caret-up" id="pArrowUp"></i>
                     </figure>
                     <hr>
                 </div>
@@ -167,14 +177,6 @@
 </body>
 
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
 
     $(window).scroll(function() {
         var $height = $(window).scrollTop();
@@ -255,9 +257,11 @@
         });
     });
 
+
     $(".submenu").click(function() {
         $(this).next(".submenu-panel").toggle();
     });
+
 </script>
 
 

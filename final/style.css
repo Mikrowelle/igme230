@@ -21,9 +21,61 @@ nav {
     z-index: 1;
 }
 
-.topnav .icon {
-    display: none;
+.dropdown {
+	float: right;
 }
+
+.dropdown .dropbtn {
+	font-size: 1em;
+	border: none;
+	outline: none;
+	color: #fafafa;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	/* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: dodgerblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 2em;
+	/*aligns dropdown with button*/
+	min-width: 200px;
+	background-color: #f9f9f9;
+	box-shadow: rgba(22, 23, 26, 0.15) 0px 8px 16px;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: .5em 1em;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-direction: column;
+
+}
+
 
 .nav_elements {
     width: 1000px;
@@ -128,7 +180,7 @@ header div {
 }
 
 /*Button Styles*/
-button {
+aside button {
     background: #5182FF;
     border: none;
     border-radius: 8px;
@@ -141,13 +193,13 @@ button {
     opacity:
 }
 
-button:hover {
+aside button:hover {
     -webkit-box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
     -moz-box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
     box-shadow: 0px 3px 8px 0px rgba(2, 56, 150, 1);
 }
 
-button:active {
+aside button:active {
     background: #4c7aed;
     -webkit-box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
@@ -295,6 +347,11 @@ nav a:hover {
 figure {
     margin: 0;
     padding: 0;
+}
+
+/*hides down arrow when up*/
+#pArrowDown{
+    display: none;
 }
 
 hr {
