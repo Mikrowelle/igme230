@@ -365,7 +365,12 @@ hr {
 
 .hideshowicon {
     margin-left: .5em;
+    padding-bottom: .25em;
     height: 100%;
+}
+
+.hideshowicon i{
+    font-size: 1.5em;
 }
 
 #projectgrid {
@@ -449,6 +454,10 @@ hr {
         /* Safari */
         position: sticky;
         top: 0;
+    }
+
+    .nav_elements{
+        justify-content: center;
     }
 
     .topnav a:not(:last-child) {
