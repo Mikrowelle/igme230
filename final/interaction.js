@@ -1,21 +1,6 @@
 "use strict";
 
-//makes the carousal change
-    var myIndex = 0;
-    carousel();
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slide");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
-    }
+//This is all my jQueery Stuff
 
 /*Flips the exband and hide arrows*/
 $(".hideshow").click(function () {
@@ -26,7 +11,7 @@ $(".hideshow").click(function () {
 });
 
 /*Hover states for projects*/
-$(".projgallery").children("div").hover(function(){
+$(".projgallery").children("div").hover(function () {
     $(this).children(".carddetails").toggle();
 });
 

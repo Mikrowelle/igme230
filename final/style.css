@@ -7,9 +7,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
+
 }
 
-
+/*Top Navigation*/
 nav {
     width: 100%;
     display: flex;
@@ -28,6 +29,7 @@ nav {
 
 .dropdown {
     float: right;
+    position: relative;
 }
 
 .dropdown .dropbtn {
@@ -92,11 +94,28 @@ nav {
     align-items: center;
 }
 
+nav a {
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    transition: all 0.2 ease-out 0;
+}
+
+nav a:hover {
+    background-color: dodgerblue;
+    color: #fafafa;
+}
+
+/*-----------------------------------------*/
+
 .parallax {
 
 	/* Set a specific height */
 	height: 800px;
     width: 100vw;
+    max-width:100%;
+    margin: 0;
+    padding: 0;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -119,6 +138,8 @@ nav {
   background-image: url("images/home/about_cover.webp");
 }
 /*-----------------------------------------*/
+
+/*Centers Stuff on Page*/
 .content {
     display: flex;
     justify-content: center;
@@ -135,6 +156,7 @@ article {
     grid-column: 1/ span 2;
 }
 
+/*Video Containers*/
 .fullsize {
     grid-column: 1/ span 2;
     width: 100%;
@@ -147,10 +169,14 @@ video {
     object-fit: contain;
 }
 
+/*-----------------------------------------*/
+
 header {
     display: grid;
     max-width: 100%;
     max-height: 100%;
+    /*Cheat fix to an issue with the parallax class*/
+    overflow: hidden;
 }
 
 header div {
@@ -315,17 +341,7 @@ p {
     margin-bottom: 2em;
 }
 
-nav a {
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    transition: all 0.2 ease-out 0;
-}
 
-nav a:hover {
-    background-color: dodgerblue;
-    color: #fafafa;
-}
 
 /*side nav*/
 #navpanel {
@@ -499,7 +515,6 @@ hr {
     height: auto;
 }
 /*-----------------------------------------*/
-
 
 @media (max-width:640px) {
 
