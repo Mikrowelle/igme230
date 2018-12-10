@@ -513,12 +513,24 @@ hr {
 
 .thumbnail img {
     border-radius: 8px;
-    max-width: 100%;
+    max-width: 100vw;
     width: auto;
     height: auto;
 }
 
 /*-----------------------------------------*/
+
+/*i-frames*/
+.icontainer{
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    grid-column: 1/ span all;
+    width:100%;
+    height:444px;
+}
 
 @media (max-width:640px) {
 
