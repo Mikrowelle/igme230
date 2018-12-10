@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://use.typekit.net/xcp6ekd.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="modernizr-custom.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Andrew Lefurge - Vehicle Registration</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_elements">
+            <h1 class="site_name"><span class="full-text">Lefurge Design</span>
+                <span class="short-text">LD</span></h1>
+            <!-- Site Links-->
+            <div id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <!-- Dropdown Menus-->
+                <div class="dropdown">
+                    <button class="dropbtn">Projects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <!-- Links in the Dropdown-->
+                    <div class="dropdown-content">
+                        <a href="newsdeck.html">News Deck</a>
+                        <a href="banking.html">Mobile Banking</a>
+                        <a href="vehicle.html">Vehicle Registration</a>
+                        <a href="zelda.html">JS Zelda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="return_button">
+        <a href="#header_gallary"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
+    </div>
+    <div id="navpanel">
+        <div id="navtoggle"><span id="open">+</span><span id="close">-</span></div>
+        <div id="navmenu">
+            <p>Page Index</p>
+            <ul>
+                <li><span class="submenu">Background</span>
+                    <ul class="submenu-panel">
+                        <li><a href="jquery-slide-panel.html">Project Intro</a></li>
+                        <li><a href="jquery-slide-side.html">Project Facts</a></li>
+                    </ul>
+                </li>
+                <li>Goal</li>
+                <li><span class="submenu">Research</span>
+                    <ul class="submenu-panel">
+                        <li>Getting Insights</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header id="header_gallary">
+        <div>
+            <h1>Vehicle Registration</h1>
+            <a href="#project_intro"><img class="icon" src="images/down_icon.svg" alt="Scroll Down Icon"></a>
+        </div>
+        <img class="slide" src="images/vehicle/vehicle_cover_folio.jpg" alt="App mockup on pink background">
+    </header>
+    <div class="content">
+        <div class="grid">
+
+            <section id="project_intro">
+                <h1>Vehicle Registrationg</h1>
+                <h3>UX Redesign</h3>
+                <p>In order to modernize and streamline the process of registering a vehicle with the state of New York, a full case study was preformed to evaluate how the process is currently handled using paper documents and how the dynamic nature of the web can enhance this process.</p>
+            </section>
+            <aside>
+                <h3>Role</h3>
+                <p>Visual Design, Interaction Design, Research</p>
+                <h3>Duration</h3>
+                <p>2 Weeks, April - May 2018</p>
+                <h3>Tools</h3>
+                <p>Adobe XD</p>
+                <button onclick="window.location.href='https://paper.dropbox.com/doc/Vehicle-Registration-A-Case-Study-kgdvYX32XfXbG94eKS0gc?_tk=share_copylink'" class="deckButt">View Deck</button>
+            </aside>
+            <article class="gallery">
+                <picture>
+                    <img src="images/vehicle/vehicle_mockup.jpg">
+                </picture>
+            </article>
+            <article>
+                <h2>Form Configuration</h2>
+                <p>By first learning who the user is, the form can be configured to only ask the user for the information that is necessary to complete their task. </p>
+            </article>
+            <article class="gallery">
+                <picture>
+                    <img src="images/vehicle/Configure_Form_Final.png">
+                </picture>
+            </article>
+            <article>
+                <h2>Form</h2>
+                <p>The core form was redesigned to present information in a clear relationship based hierarchy. Subtle features were added to enhance the user experience and reduce error, such as helper text, error icons, and an annotated progress bar.</p>
+            </article>
+            <article class="gallery">
+                <picture>
+                    <img src="images/vehicle/Main_Form_Final.png">
+                </picture>
+            </article>
+            <article>
+                <h2>Warning State</h2>
+                <p>To key features were introduced to mitigate accidental progress loss. The first is a button in the top right that allows the user to save their progress. The second is a warning screen that is presented when the user attempts to close or leave the page.</p>
+            </article>
+            <article class="gallery">
+                <picture>
+                    <img src="images/vehicle/Leaving_Page_Prompt_Final.png">
+                </picture>
+            </article>
+            <article>
+                <h2>User Certification</h2>
+                <p>Signing a form is an unintuitive action on a desktop site and therefore an alternative method of user certification was required. The user has the option to either enter their social security number, if they are uncomfortable doing so or are not a US citizen they may alternatively upload a photo of a valid drivers license.</p>
+            </article>
+            <article class="gallery">
+                <picture>
+                    <img src="images/vehicle/Certification_Final.png">
+                </picture>
+            </article>
+        </div>
+
+        <script src="interaction.js"></script>
+
+        <script>
+            //makes the carousal change
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
+            }
+
+        </script>
+
+</body>
+
+</html>
