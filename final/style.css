@@ -92,6 +92,32 @@ nav {
     align-items: center;
 }
 
+.parallax {
+	/* The image used */
+	background-image: url(images/home/about_cover.webp);
+
+	/* Set a specific height */
+	height: 800px;
+    width: 100vw;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    grid-area: header;
+}
+
+/*Using Modernizer as a fallback for the Webp parallax image*/
+.no-webp .parallax {
+  background-image: url("iimages/home/about_cover.jpg");
+}
+
+.webp .parallax{
+  background-image: url("images/home/about_cover.webp");
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -165,6 +191,7 @@ header div {
 .slidestill {
     grid-area: header;
     grid-column-end: span all;
+    display: none;
     max-width: 100%;
 }
 
@@ -352,11 +379,12 @@ nav a:hover {
     padding: 0 .5em 0 2em;
 }
 
-/*Home Screen*/
+/*Home Screen Don't Know if I Still Need This?*/
 figure {
     margin: 0;
     padding: 0;
 }
+/*-----------------------------------------*/
 
 /*hides down arrow when up*/
 #pArrowDown {
@@ -438,6 +466,7 @@ hr {
     display: none;
     transition: all .1s ease-out .1s;
 }
+/*-----------------------------------------*/
 
 #newsdeck {
     grid-column: 1 /span 2;
@@ -458,6 +487,7 @@ hr {
     grid-column: 2;
     margin-left: 8px;
 }
+/*-----------------------------------------*/
 
 /*images*/
 
@@ -467,6 +497,7 @@ hr {
     width: auto;
     height: auto;
 }
+/*-----------------------------------------*/
 
 
 @media (max-width:640px) {
@@ -487,6 +518,16 @@ hr {
         right: 0;
         min-width: 100%;
     }
+    /*-----------------------------------------*/
+
+    /*Gets rid of parallax on mobile*/
+    .parallax{
+        display: none;
+    }
+    .slidestill{
+        display: block;
+    }
+    /*-----------------------------------------*/
 
     /*Hides the full site name and shows the shortend version*/
     .short-text {
@@ -496,6 +537,7 @@ hr {
     .full-text {
         display: none;
     }
+    /*-----------------------------------------*/
 
     section {
         grid-column: 1/ span 2;
@@ -535,22 +577,6 @@ hr {
         margin-left: 0;
 
     }
+    /*-----------------------------------------*/
 }
 
-/*Displays jpgs When WebP images are not Supported*/
-/*.legacyimg {
-    display: none;
-}
-
-.no-web .modernimg {
-   display:none;
-}
-
-.webp .modernimg {
-    display: block;
-}
-
-.no-webp .legacyimg {
-    display: block;
-}
-*/
