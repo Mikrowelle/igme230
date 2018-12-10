@@ -536,19 +536,34 @@ hr {
 
     }
 }
+
 /*Displays jpgs When WebP images are not Supported*/
-.legacyimg{
-    display: none !important;
+.legacyimg {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
-.no-web .modernimg{
-    display: none !important;
+.no-web .modernimg {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
-.webp .modernimg{
+.webp .modernimg {
     display: block;
 }
 
-.no-webp .legacyimg{
+.no-webp .legacyimg {
     display: block;
 }
