@@ -88,44 +88,54 @@
             </aside>
             <article class="gallery">
                 <picture>
+                    <img src="images/banking/hand_mockup.png" alt="Hand holding phone">
                 </picture>
             </article>
             <article>
                 <h2>Same App New Look</h2>
-                <p>I redesigned the <a href="https://www.affinityfcu.com/banking/mobile-banking/the-affinity-mobile-banking-app.aspx">Affinity Mobile Banking app</a> to meet the expectations of young users and to satisfy the interests of the business. Subtle gradients and illustrations were used to bring the design in line with modern trends, while generous spacing and a clear visual hierarchy ensure clarity and usability.</p>
+                <p>I redesigned the to meet the expectations of young users and to satisfy the interests of the business. Subtle gradients and illustrations were used to bring the design in line with modern trends, while generous spacing and a clear visual hierarchy ensure clarity and usability.</p>
             </article>
-            <figure class="fullsize">
-                <video autoplay playsinline controls loop src="videos/news_deck/home_interaction.mp4"></video>
-                <video autoplay playsinline controls loop src="videos/news_deck/bookmarks_interaction.mp4"></video>
-            </figure>
+            <article class="gallery">
+                <div class="cell">
+                    <img src="images/banking/iphone_acount_screen.png">
+                </div>
+                <div class="cell">
+                    <img src="images/banking/iphone_transfer_screen.png">
+                </div>
+            </article>
             <article>
                 <h2>Finding the Mood</h2>
                 <p>When finding the mood for the design, I wanted to avoid looking at existing UI for my first references to avoid the pitfalls of the products already on the market. Instead I found inspiration in modern Industrial Design and Photography. I was especially inspired by white Mediterranean homes resting against the natural gradients of a sunset. This became a key influence for my design direction.</p>
             </article>
+            <article class="gallery">
+                <picture>
+                    <img src="images/banking/mood_board.jpg" alt="Hand holding phone">
+                </picture>
+            </article>
+        </div>
 
-    </div>
+        <script src="interaction.js"></script>
 
-    <script src="interaction.js"></script>
+        <script>
+            //makes the carousal change
+            var myIndex = 0;
+            carousel();
 
-    <script>
-        //makes the carousal change
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slide");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000);
-        }
-    </script>
+
+        </script>
 
 </body>
 

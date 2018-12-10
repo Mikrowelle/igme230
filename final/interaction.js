@@ -31,7 +31,7 @@ $(window).scroll(function () {
             "color": "#fafafa"
         });
 
-        $("#return_button a").css({
+        $("a").css({
             "color": "#fafafa",
             "opacity": "1"
         });
@@ -57,7 +57,7 @@ $(window).scroll(function () {
         $(".dropbtn").css({
             "color": "#333333"
         });
-        $("#return_button a").css({
+        $("a").css({
             "color": "#333333"
         });
         $(".site_name").css({
