@@ -502,7 +502,7 @@ hr {
     margin-left: 8px;
 }
 
-#strongmuseum {
+#potions {
     grid-column: 2;
     margin-left: 8px;
 }
@@ -595,7 +595,7 @@ hr {
 
     }
 
-    #strongmuseum {
+    #potions {
         grid-column: 1 /span 2;
         margin-left: 0;
 
