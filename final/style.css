@@ -169,7 +169,7 @@ article {
 video {
     margin: 2em;
     object-fit: contain;
-    height:600px;
+    height: 600px;
 }
 
 /*-----------------------------------------*/
@@ -298,6 +298,8 @@ header a:hover {
     background: none;
 }
 
+/*Text Styles*/
+
 header h1,
 .carddetails {
     font-size: 5vw;
@@ -345,7 +347,13 @@ p {
     margin-bottom: 2em;
 }
 
+article p a{
+    font-size: 1em;
+    font-weight: normal;
+    color: #5182FF;
+}
 
+/*-----------------------------------------*/
 
 /*side nav*/
 #navpanel {
@@ -525,16 +533,16 @@ hr {
 /*-----------------------------------------*/
 
 /*i-frames*/
-.icontainer{
+.icontainer {
     margin: 2em;
     grid-column: 1/ span all;
     display: flex;
     justify-content: center;
 }
 
-iframe{
-    width:640px;
-    height:443.5px;
+iframe {
+    width: 640px;
+    height: 443.5px;
 }
 
 @media (max-width:640px) {
@@ -620,6 +628,7 @@ iframe{
 
     /*-----------------------------------------*/
 }
+
 /*JUST FIXES THE NAV OMG*/
 @media (min-width:640px) {
 
