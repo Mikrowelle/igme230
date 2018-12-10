@@ -21,65 +21,65 @@ nav {
     z-index: 1;
 }
 
-#navLinks{
+#navLinks {
     display: flex;
 }
 
 
 .dropdown {
-	float: right;
+    float: right;
 }
 
 .dropdown .dropbtn {
-	font-size: 1em;
-	border: none;
-	outline: none;
-	color: #333333;
-	background-color: inherit;
-	font-family: inherit;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: #333333;
+    background-color: inherit;
+    font-family: inherit;
     padding: 1em;
-	margin: 0;
-	/* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-	background-color: dodgerblue;
+    background-color: dodgerblue;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-	display: none;
-	position: absolute;
-    top:51px;
-	right: 0;
-	/*aligns dropdown with button*/
-	min-width: 200px;
-	background-color: #fafafa;
-	box-shadow: rgba(22, 23, 26, 0.15) 0px 8px 16px;
-	z-index: 1;
+    display: none;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    /*aligns dropdown with button*/
+    min-width: 200px;
+    background-color: #fafafa;
+    box-shadow: rgba(22, 23, 26, 0.15) 0px 8px 16px;
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-	float: none;
-	color: #fafafa;
-	padding: .5em 1em;
-	text-decoration: none;
-	text-align: center;
-	align-items: center;
+    float: none;
+    color: #fafafa;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: dodgerblue
+    background-color: dodgerblue
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -227,7 +227,7 @@ aside button:active {
 }
 
 /*Hides Shortend text in desktop view*/
-.short-text{
+.short-text {
     display: none;
 }
 
@@ -362,7 +362,7 @@ figure {
 }
 
 /*hides down arrow when up*/
-#pArrowDown{
+#pArrowDown {
     display: none;
 }
 
@@ -381,7 +381,7 @@ hr {
     height: 100%;
 }
 
-.hideshowicon i{
+.hideshowicon i {
     font-size: 1.5em;
 }
 
@@ -468,15 +468,21 @@ hr {
         top: 0;
     }
 
-    .nav_elements{
+    .nav_elements {
         justify-content: center;
     }
 
+    .dropdown-content {
+        right: 0;
+        min-width: 100%;
+    }
+
     /*Hides the full site name and shows the shortend version*/
-    .short-text{
+    .short-text {
         display: block;
     }
-     .full-text{
+
+    .full-text {
         display: none;
     }
 
