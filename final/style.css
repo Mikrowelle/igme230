@@ -178,6 +178,7 @@ header div {
     height: 64px;
     opacity: 0;
     transition: opacity 0.2s ease-out .1s;
+    z-index: 2;
 }
 
 #return_button a img {
@@ -197,7 +198,6 @@ aside button {
     text-align: center;
     color: #fafafa;
     transition: all .1s ease-out .1s;
-    opacity:
 }
 
 aside button:hover {
@@ -335,9 +335,6 @@ nav a:hover {
 }
 
 /* hides hamburger menu in desktop view*/
-.ham {
-    display: none;
-}
 
 #close {
     display: none;
@@ -419,13 +416,27 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.projgallery div figure img {
+    transition: all .1s ease-out .1s;
+}
+
+.projgallery div figure img:hover {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3x 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
 }
 
 /*Positions text above gallery cards*/
 .carddetails {
     font-size: 1em;
+    padding: 0 1em;
     position: absolute;
-    z-index: 1;
+    display: none;
+    transition: all .1s ease-out .1s;
 }
 
 #newsdeck {
@@ -524,4 +535,16 @@ hr {
         margin-left: 0;
 
     }
+}
+
+.legacyimg{
+    display: none;
+}
+
+.no-web .modernimg{
+    display: none;
+}
+
+.webp .modernimg{
+    display: block;
 }

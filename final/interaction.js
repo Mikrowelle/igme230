@@ -8,6 +8,11 @@ $(".hideshow").click(function () {
 
 });
 
+/*Hover states for projects*/
+$(".projgallery").children("div").hover(function(){
+    $(this).children(".carddetails").toggle();
+});
+
 /*Navigation Changes on Scroll*/
 $(window).scroll(function () {
     var $height = $(window).scrollTop();
