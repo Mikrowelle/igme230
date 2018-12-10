@@ -536,7 +536,7 @@ hr {
 
     }
 }
-
+/*Displays jpgs When WebP images are not Supported*/
 .legacyimg{
     display: none;
 }
@@ -546,5 +546,9 @@ hr {
 }
 
 .webp .modernimg{
+    display: block;
+}
+
+.no-webp .legacyimg{
     display: block;
 }
