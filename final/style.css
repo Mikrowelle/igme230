@@ -93,8 +93,6 @@ nav {
 }
 
 .parallax {
-	/* The image used */
-	background-image: url(images/home/about_cover.webp);
 
 	/* Set a specific height */
 	height: 800px;
@@ -110,14 +108,17 @@ nav {
 }
 
 /*Using Modernizer as a fallback for the Webp parallax image*/
+
+/*Browser doesnt support webp*/
 .no-webp .parallax {
-  background-image: url("iimages/home/about_cover.jpg");
+  background-image: url("images/home/about_cover.jpg");
 }
 
+/*Browser supports webp*/
 .webp .parallax{
   background-image: url("images/home/about_cover.webp");
 }
-
+/*-----------------------------------------*/
 .content {
     display: flex;
     justify-content: center;
