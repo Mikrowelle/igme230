@@ -193,6 +193,8 @@ header div {
     transition: opacity 0.2s ease-out .1s;
 }
 
+/*handeling images*/
+
 .gallery {
     padding: 2em;
     grid-column: 1/ span 2;
@@ -200,6 +202,11 @@ header div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.deckphoto{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .gallery .cell {
@@ -224,6 +231,8 @@ header div {
     display: none;
     max-width: 100%;
 }
+
+/*-----------------------------------------*/
 
 /*Return Button: Returns usere to the top of the page*/
 #return_button {
