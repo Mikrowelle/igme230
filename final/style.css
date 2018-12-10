@@ -35,7 +35,7 @@ nav {
     font-size: 1em;
     border: none;
     outline: none;
-    color: #333333;
+    color: black;
     background-color: inherit;
     font-family: inherit;
     padding: 1em;
@@ -65,7 +65,7 @@ nav {
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
-    color: #fafafa;
+    color: black;
     padding: .5em 1em;
     text-decoration: none;
     text-align: center;
@@ -522,14 +522,15 @@ hr {
 
 /*i-frames*/
 .icontainer{
+    margin: 2em;
+    grid-column: 1/ span all;
     display: flex;
     justify-content: center;
 }
 
 iframe{
-    grid-column: 1/ span all;
-    width:100%;
-    height:444px;
+    width:640px;
+    height:443.5px;
 }
 
 @media (max-width:640px) {
