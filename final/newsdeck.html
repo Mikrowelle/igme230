@@ -93,68 +93,6 @@
 	</div>
 </body>
 <script>
-	//makes the carousal change
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("slide");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
-		myIndex++;
-		if (myIndex > x.length) {
-			myIndex = 1
-		}
-		x[myIndex - 1].style.display = "block";
-		setTimeout(carousel, 4000);
-	}
-
-	$(window).scroll(function() {
-		var $height = $(window).scrollTop();
-		if ($height > 50) {
-			$("nav").css({
-				"background-color": "black",
-				"opacity": ".8"
-			});
-			$("a").css({
-				"color": "#fafafa",
-				"opacity": "1"
-			});
-			$(".site_name").css({
-				"color": "#fafafa",
-				"opacity": "1"
-			});
-			$("header div").css({
-				"opacity": "0"
-			});
-			$("#return_button").css({
-				"opacity": ".8"
-			});
-		} else {
-			$("nav").css({
-				"opacity": "1",
-				"background": "none"
-			});
-			$("a").css({
-				"color": "#333333"
-			});
-			$(".site_name").css({
-				"color": "#333333"
-			});
-			$("header h1").css({
-				"opacity": ".8"
-			});
-			$("header div").css({
-				"opacity": ".8"
-			});
-			$("#return_button").css({
-				"opacity": "0"
-			});
-		}
-	});
-
 	$('header a').click(function() {
 		let target = $(this.hash);
 		$('html, body').animate({

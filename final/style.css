@@ -21,6 +21,11 @@ nav {
     z-index: 1;
 }
 
+#navLinks{
+    display: flex;
+}
+
+
 .dropdown {
 	float: right;
 }
@@ -29,9 +34,10 @@ nav {
 	font-size: 1em;
 	border: none;
 	outline: none;
-	color: #fafafa;
+	color: #333333;
 	background-color: inherit;
 	font-family: inherit;
+    padding: 1em;
 	margin: 0;
 	/* Important for vertical align on mobile phones */
 }
@@ -46,10 +52,11 @@ nav {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	right: 2em;
+    top:51px;
+	right: 0;
 	/*aligns dropdown with button*/
 	min-width: 200px;
-	background-color: #f9f9f9;
+	background-color: #fafafa;
 	box-shadow: rgba(22, 23, 26, 0.15) 0px 8px 16px;
 	z-index: 1;
 }
@@ -57,7 +64,7 @@ nav {
 /* Links inside the dropdown */
 .dropdown-content a {
 	float: none;
-	color: black;
+	color: #fafafa;
 	padding: .5em 1em;
 	text-decoration: none;
 	text-align: center;
@@ -66,7 +73,7 @@ nav {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: #ddd;
+	background-color: dodgerblue
 }
 
 /* Show the dropdown menu on hover */
@@ -217,6 +224,11 @@ aside button:active {
     font-size: 2em;
     margin: 0 0 0 .5em;
     transition: all 0.2 ease-out 0;
+}
+
+/*Hides Shortend text in desktop view*/
+.short-text{
+    display: none;
 }
 
 header .icon {
@@ -460,29 +472,12 @@ hr {
         justify-content: center;
     }
 
-    .topnav a:not(:last-child) {
+    /*Hides the full site name and shows the shortend version*/
+    .short-text{
+        display: block;
+    }
+     .full-text{
         display: none;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
     }
 
     section {
