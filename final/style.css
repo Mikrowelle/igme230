@@ -538,11 +538,11 @@ hr {
 }
 /*Displays jpgs When WebP images are not Supported*/
 .legacyimg{
-    display: none;
+    display: none !important;
 }
 
 .no-web .modernimg{
-    display: none;
+    display: none !important;
 }
 
 .webp .modernimg{
