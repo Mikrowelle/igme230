@@ -91,48 +91,9 @@
 			</figure>
 		</div>
 	</div>
+
+    <script src="interaction.js"></script>
+
 </body>
-<script>
-	$('header a').click(function() {
-		let target = $(this.hash);
-		$('html, body').animate({
-			scrollTop: target.offset().top - 65
-		}, 600);
-	});
-	$('#return_button a').click(function() {
-		let target = $(this.hash);
-		$('html, body').animate({
-			scrollTop: target.offset().top
-		}, 600);
-	});
-
-	$("#close").click(function() {
-		$("#navpanel").animate({
-			left: '-250'
-		}, "slow");
-		$("#close").toggle();
-		$("#open").toggle();
-		$("#navpanel").css({
-			"opacity": ".5"
-		});
-	});
-
-	$("#open").click(function() {
-		$("#navpanel").animate({
-			left: '0px'
-		}, "slow");
-		$("#close").toggle();
-		$("#open").toggle();
-		$("#navpanel").css({
-			"opacity": ".8"
-		});
-	});
-
-	$(".submenu").click(function() {
-		$(this).next(".submenu-panel").toggle();
-	});
-</script>
-
-
 
 </html>

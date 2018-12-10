@@ -42,7 +42,7 @@ nav {
     /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a blue background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: dodgerblue;
