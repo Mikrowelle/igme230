@@ -29,7 +29,6 @@ nav {
 
 .dropdown {
     float: right;
-    position: relative;
 }
 
 .dropdown .dropbtn {
@@ -110,18 +109,18 @@ nav a:hover {
 
 .parallax {
 
-	/* Set a specific height */
-	height: 800px;
+    /* Set a specific height */
+    height: 800px;
     width: 100vw;
-    max-width:100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
 
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: right;
-	background-repeat: no-repeat;
-	background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     grid-area: header;
 }
@@ -130,13 +129,14 @@ nav a:hover {
 
 /*Browser doesnt support webp*/
 .no-webp .parallax {
-  background-image: url("images/home/about_cover.jpg");
+    background-image: url("images/home/about_cover.jpg");
 }
 
 /*Browser supports webp*/
-.webp .parallax{
-  background-image: url("images/home/about_cover.webp");
+.webp .parallax {
+    background-image: url("images/home/about_cover.webp");
 }
+
 /*-----------------------------------------*/
 
 /*Centers Stuff on Page*/
@@ -401,6 +401,7 @@ figure {
     margin: 0;
     padding: 0;
 }
+
 /*-----------------------------------------*/
 
 /*hides down arrow when up*/
@@ -464,11 +465,11 @@ hr {
 
 }
 
-.projgallery div figure img {
+.projgallery div picture {
     transition: all .1s ease-out .1s;
 }
 
-.projgallery div figure img:hover {
+.projgallery div picture:hover {
     -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3x 8px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
@@ -483,6 +484,7 @@ hr {
     display: none;
     transition: all .1s ease-out .1s;
 }
+
 /*-----------------------------------------*/
 
 #newsdeck {
@@ -504,6 +506,7 @@ hr {
     grid-column: 2;
     margin-left: 8px;
 }
+
 /*-----------------------------------------*/
 
 /*images*/
@@ -514,6 +517,7 @@ hr {
     width: auto;
     height: auto;
 }
+
 /*-----------------------------------------*/
 
 @media (max-width:640px) {
@@ -531,18 +535,20 @@ hr {
     }
 
     .dropdown-content {
-        right: 0;
-        min-width: 100%;
+        min-width: 100vw;
     }
+
     /*-----------------------------------------*/
 
     /*Gets rid of parallax on mobile*/
-    .parallax{
+    .parallax {
         display: none;
     }
-    .slidestill{
+
+    .slidestill {
         display: block;
     }
+
     /*-----------------------------------------*/
 
     /*Hides the full site name and shows the shortend version*/
@@ -553,6 +559,7 @@ hr {
     .full-text {
         display: none;
     }
+
     /*-----------------------------------------*/
 
     section {
@@ -593,6 +600,14 @@ hr {
         margin-left: 0;
 
     }
+
     /*-----------------------------------------*/
 }
+/*JUST FIXES THE NAV OMG*/
+@media (min-width:640px) {
 
+    .dropdown {
+        position: relative;
+    }
+
+}
